@@ -49,6 +49,10 @@ public class CurrencyConverter{
 					txt_rupees.setEditable(false);
 					lb_check1.setText("Enter a numerical value only");
 				}
+				if((!Character.isDigit(c)) || (Character.isLetter(c)) || (Character.isWhitespace(c))) {
+					txt_rupees.setEditable(false);
+					lb_check1.setText("Enter a numerical value only");
+				}
 				else {
 					txt_rupees.setEditable(true);
 				}
@@ -86,6 +90,10 @@ public class CurrencyConverter{
 				char c = e.getKeyChar();
 				
 				if(Character.isLetter(c) || Character.isWhitespace(c)) {
+					txt_dollars.setEditable(false);
+					lb_check2.setText("Enter a numerical value only");
+				}
+				if((!Character.isDigit(c)) || (Character.isLetter(c)) || (Character.isWhitespace(c))) {
 					txt_dollars.setEditable(false);
 					lb_check2.setText("Enter a numerical value only");
 				}
